@@ -1,0 +1,31 @@
+@import url(./__rentangle/element__rentangle.css);
+@import url(./__item/element__item.css);
+@import url(./__title/element__title.css);
+@import url(./__group/element__group.css);
+@import url(./__buttonlike/element__buttonlike.css);
+
+.elements {
+    max-width: 882px;
+    margin: 51px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-column-gap: 18px;
+    grid-row-gap: 21px;
+}
+
+@media screen and (max-width: 883px) {
+    .elements {
+        grid-template-columns: repeat(2, auto);
+    }
+    }
+
+@media screen and (max-width: 470px) {
+    .elements {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        margin: 36px auto 0;
+        max-width: 282px;
+}
+}

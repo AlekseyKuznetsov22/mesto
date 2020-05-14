@@ -1,0 +1,12 @@
+.profile__container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    max-width: 336px;
+}
+
+@media screen and (max-width: 883px) {
+    .profile__container {
+        margin: 0 auto 0;
+    }
+  }
