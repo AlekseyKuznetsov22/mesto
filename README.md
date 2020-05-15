@@ -1,4 +1,4 @@
-# Проект 3: **Путешествия по России**
+# Проект 3: **Место**
 
 Ссылка на проект - [https://alekseykuznetsov22.github.io/mesto/index.html]
 
