@@ -1,8 +1,8 @@
-@import url(./__rentangle/element__rentangle.css);
-@import url(./__item/element__item.css);
-@import url(./__title/element__title.css);
-@import url(./__group/element__group.css);
-@import url(./__buttonlike/element__buttonlike.css);
+@import url(./__rentangle/elements__rentangle.css);
+@import url(./__item/elements__item.css);
+@import url(./__title/elements__title.css);
+@import url(./__group/elements__group.css);
+@import url(./__button-like/elements__button-like.css);
 
 .elements {
     max-width: 882px;

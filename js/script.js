@@ -1,9 +1,9 @@
 const popup = document.querySelector('.popup'); //вызов popup
-const buttonedit = document.querySelector('.profile__editButton'); //кнопка редактировать
-const buttonclose = document.querySelector('.popup__close');  //кнопка закрыть
+const buttonedit = document.querySelector('.profile__edit-button'); //кнопка редактировать
+const buttonclose = document.querySelector('.popup__button-close');  //кнопка закрыть
 const formElement = document.querySelector('.popup__container'); //форма
-const nameInput = document.querySelector('.popup__field-name'); //ввод имени
-const jobInput = document.querySelector('.popup__field-text'); //ввод информации
+const nameInput = document.querySelector('.popup__field_name'); //ввод имени
+const jobInput = document.querySelector('.popup__field_text'); //ввод информации
 const profileTitle = document.querySelector('.profile__title'); // заголовок профиля
 const profileSubtitle = document.querySelector('.profile__subtitle'); // подзаголовок профиля
 
@@ -25,7 +25,7 @@ function formSubmitHandler (evt) {   //форма отправки
     evt.preventDefault();
     profileTitle.textContent =  nameInput.value;
     profileSubtitle.textContent = jobInput.value;
-    popup.classList.remove('popup_opened');
+    closeForm(); 
 }
 
 buttonedit.addEventListener('click', openForm);
