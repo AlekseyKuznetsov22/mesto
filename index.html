@@ -20,13 +20,13 @@
                 <div class="profile__info">
                     <div class="profile__container">
                         <h1 class="profile__title">Жак-Ив Кусто</h1>
-                        <button type="button" class="profile__edit-button"></button>
+                        <button type="button" aria-label="редактировать" class="profile__edit-button"></button>
 
                         <p class="profile__subtitle">Исследователь океана</p>
                     </div>
                 </div>
 
-                <button type="button" class="profile__add-button"></button>
+                <button type="button" aria-label="добавить" class="profile__add-button"></button>
 
             </section>
 
@@ -36,7 +36,7 @@
                     <img class="elements__item" src="./images/element1.jpg" alt="Карачаевск">
                     <div class="elements__group">
                         <h3 class="elements__title">Карачаевск</h3>
-                        <button type="button" class="elements__button-like"></button>
+                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@
                     <img class="elements__item" src="./images/element2.jpg" alt="Гора Эльбрус">
                     <div class="elements__group">
                         <h3 class="elements__title">Гора Эльбрус</h3>
-                        <button type="button" class="elements__button-like"></button>
+                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
                     </div>
                 </div>
 
@@ -52,7 +52,7 @@
                     <img class="elements__item" src="./images/element3.jpg" alt="Домбай">
                     <div class="elements__group">
                         <h3 class="elements__title">Домбай</h3>
-                        <button type="button" class="elements__button-like"></button>
+                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
                     </div>
                 </div>
 
@@ -60,7 +60,7 @@
                     <img class="elements__item" src="./images/element2.jpg" alt="Гора Эльбрус">
                     <div class="elements__group">
                         <h3 class="elements__title">Гора Эльбрус</h3>
-                        <button type="button" class="elements__button-like"></button>
+                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
                     </div>
                 </div>
 
@@ -68,7 +68,7 @@
                     <img class="elements__item" src="./images/element3.jpg" alt="Домбай">
                     <div class="elements__group">
                         <h3 class="elements__title">Домбай</h3>
-                        <button type="button" class="elements__button-like"></button>
+                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@
                     <img class="elements__item" src="./images/element1.jpg" alt="Карачаево-Ч">
                     <div class="elements__group">
                         <h3 class="elements__title">Карачаево-Ч...</h3>
-                        <button type="button" class="elements__button-like"></button>
+                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
                     </div>
                 </div>
 
@@ -92,13 +92,13 @@
                 <form class="popup__form" name="profile" method="GET" action="#">
                     <h2 class="popup__title">Редактировать профиль</h2>
                     <input type="text" name="profile-name" class="popup__field popup__field_name" value=""
-                        placeholder="Жак-Ив Кусто" required="">
+                        placeholder="заголовок" required="">
                     <input type="text" name="profile-text" class="popup__field popup__field_text" value=""
-                        placeholder="Исследователь океана" required="">
+                        placeholder="описание" required="">
                     <button type="submit" class="popup__button-save">
                         Сохранить
                     </button>
-                    <button type="button" aria-label="close" class="popup__button-close"></button>
+                    <button type="button" aria-label="Закрыть" class="popup__button-close"></button>
                 </form>
             </div>
         </section>
