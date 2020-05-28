@@ -27,58 +27,21 @@
                 </div>
 
                 <button type="button" aria-label="добавить" class="profile__add-button"></button>
-
             </section>
 
             <section class="elements">
+                <template id="element-template">
+                    <div class="elements__rentangle">
 
-                <div class="elements__rentangle">
-                    <img class="elements__item" src="./images/element1.jpg" alt="Карачаевск">
-                    <div class="elements__group">
-                        <h3 class="elements__title">Карачаевск</h3>
-                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
+                        <img class="elements__item" src="" alt="">
+                        <div class="elements__group">
+                            <h3 class="elements__title"></h3>
+                            <button type="button" aria-label="лайк" class="elements__button-like"></button>
+                        </div>
+                        
+                        <button type="button" aria-label="корзина" class="elements__remove"></button>
                     </div>
-                </div>
-
-                <div class="elements__rentangle">
-                    <img class="elements__item" src="./images/element2.jpg" alt="Гора Эльбрус">
-                    <div class="elements__group">
-                        <h3 class="elements__title">Гора Эльбрус</h3>
-                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
-                    </div>
-                </div>
-
-                <div class="elements__rentangle">
-                    <img class="elements__item" src="./images/element3.jpg" alt="Домбай">
-                    <div class="elements__group">
-                        <h3 class="elements__title">Домбай</h3>
-                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
-                    </div>
-                </div>
-
-                <div class="elements__rentangle">
-                    <img class="elements__item" src="./images/element2.jpg" alt="Гора Эльбрус">
-                    <div class="elements__group">
-                        <h3 class="elements__title">Гора Эльбрус</h3>
-                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
-                    </div>
-                </div>
-
-                <div class="elements__rentangle">
-                    <img class="elements__item" src="./images/element3.jpg" alt="Домбай">
-                    <div class="elements__group">
-                        <h3 class="elements__title">Домбай</h3>
-                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
-                    </div>
-                </div>
-
-                <div class="elements__rentangle">
-                    <img class="elements__item" src="./images/element1.jpg" alt="Карачаево-Ч">
-                    <div class="elements__group">
-                        <h3 class="elements__title">Карачаево-Ч...</h3>
-                        <button type="button" aria-label="лайк" class="elements__button-like"></button>
-                    </div>
-                </div>
+                </template>
 
             </section>
         </main>
@@ -99,6 +62,22 @@
                         Сохранить
                     </button>
                     <button type="button" aria-label="Закрыть" class="popup__button-close"></button>
+                </form>
+            </div>
+        </section>
+
+        <section class="popup popup__addform">
+            <div class="popup__container popup__container_add">
+                <form class="popup__form" name="profile" method="GET" action="#">
+                    <h2 class="popup__title">Новое место</h2>
+                    <input type="text" name="profile-name" class="popup__field popup__input_name" value=""
+                        placeholder="Название" required="">
+                    <input type="text" name="profile-text" class="popup__field popup__input_url" value=""
+                        placeholder="Ссылка на картинку" required="">
+                    <button type="submit" class="popup__button-save">
+                        Создать
+                    </button>
+                    <button type="button" aria-label="Закрыть" class="popup__button-close popup__close-add"></button>
                 </form>
             </div>
         </section>

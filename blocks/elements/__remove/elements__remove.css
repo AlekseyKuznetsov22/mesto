@@ -1,0 +1,15 @@
+.elements__remove {
+    background-image: url(../../../images/remove-icon.svg);
+    background-repeat: no-repeat;
+    padding: 0; 
+    background-color: transparent;
+    background-position: center;
+    border: 0;
+    position: relative;
+    width: 18px;
+    height: 20px;
+    cursor: pointer;
+    background-size: 100%;
+    top: -344px;
+    left: 240px;
+}

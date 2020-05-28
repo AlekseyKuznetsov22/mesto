@@ -3,6 +3,7 @@
 @import url(./__title/elements__title.css);
 @import url(./__group/elements__group.css);
 @import url(./__button-like/elements__button-like.css);
+@import url(./__remove/elements__remove.css);
 
 .elements {
     max-width: 882px;
