@@ -32,14 +32,12 @@
             <section class="elements">
                 <template id="element-template">
                     <div class="elements__rentangle">
-
                         <img class="elements__item" src="" alt="">
+                        <button type="button" aria-label="корзина" class="elements__remove"></button>
                         <div class="elements__group">
                             <h3 class="elements__title"></h3>
                             <button type="button" aria-label="лайк" class="elements__button-like"></button>
                         </div>
-                        
-                        <button type="button" aria-label="корзина" class="elements__remove"></button>
                     </div>
                 </template>
 
@@ -82,8 +80,20 @@
             </div>
         </section>
 
+        <section class="popup popup__image">
+            <div class="popup-image__container">  
+               
+                <img class="popup__img" src="" alt="">
+                 <p class="popup__name">ыыы</p>
+                 <button type="button" aria-label="Закрыть фото" class="popup__button-close popup__close-image"></button> 
+
+            </div>
+
+        </section>
+
         <script src="./js/script.js"></script>
     </div>
 </body>
 
 </html>
+

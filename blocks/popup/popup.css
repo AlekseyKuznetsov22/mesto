@@ -6,9 +6,8 @@
 @import url(./__button-save/popup__button-save.css);
 @import url(./__button-close/popup__button-close.css);
 
-
 .popup {
-    display: none;
+    visibility: hidden;
     justify-content: center;
     align-items: center;
     width: 100%; 
@@ -18,4 +17,6 @@
 	left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: 0.5s;
 }

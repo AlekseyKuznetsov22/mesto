@@ -1,0 +1,17 @@
+@import url(./__close-image/popup__close-image.css);
+@import url(./__container/popup-image__container.css);
+@import url(./__img/popup__img.css);
+@import url(./__name/popup__name.css);
+
+.popup__image {
+    visibility: hidden;
+    width: 100%; 
+	height: 100%;
+    background: #000;
+    position: fixed; 
+	left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .9);
+    opacity: 0;
+    transition: 0.5s;
+}

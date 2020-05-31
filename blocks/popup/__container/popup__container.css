@@ -9,4 +9,6 @@
     box-sizing: border-box;
     display: flex;
     position: relative;
+    top: 195px;
+    right: 0;
 }
