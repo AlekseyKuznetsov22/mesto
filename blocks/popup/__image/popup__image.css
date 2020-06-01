@@ -1,7 +1,6 @@
-@import url(./__close-image/popup__close-image.css);
-@import url(./__container/popup-image__container.css);
-@import url(./__img/popup__img.css);
-@import url(./__name/popup__name.css);
+@import url(../__container-image/popup-image__container.css);
+@import url(../__img/popup__img.css);
+@import url(../__name/popup__name.css);
 
 .popup__image {
     visibility: hidden;

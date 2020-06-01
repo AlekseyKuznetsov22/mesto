@@ -86,7 +86,9 @@ function openAdd() {
 
 buttonAdd.addEventListener('click', openAdd);
 
-                                //закрыть попап добавлн
+
+
+                                //закрыть попап добавлнения
 function closePopup() {
     addForm.classList.remove('popup_opened');
 }                                                   
@@ -120,7 +122,7 @@ const elementImage = сard.querySelector('.elements__item');
 сard.querySelector('.elements__title').textContent = name; //название с массива
 
 
-                                        //увеличение картинок
+                                        //увеличение карточек
 elementImage.addEventListener('click', function() {
     imagePopup.classList.toggle('popup_opened');
     elementPic.src = link;
