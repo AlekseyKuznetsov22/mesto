@@ -110,14 +110,14 @@ function cardsImage(evt) {
 }
 
 
-function prependCard(name, link) {
+function newCard(name, link) {
     elements.prepend(addCard(name, link));
 }
 
 
-function loadCard() {
+function loadingCard() {
     initialCards.forEach((item) => {
-        prependCard(item.name, item.link);
+        newCard(item.name, item.link);
     });
 }
 
@@ -125,7 +125,7 @@ function loadCard() {
 //функция отправки формы
 function changeElementsCard(evt) {
     evt.preventDefault();
-    addCard(popupName.value, popupLink.value);
+    newCard(popupName.value, popupLink.value);
 
     togglePopup(addForm);
 }
@@ -141,7 +141,7 @@ function cardsLike(evt) {
     evt.target.classList.toggle('elements__button-like_active');
 }
 
-loadCard();
+loadingCard();
 
 buttonClose.addEventListener('click', () => togglePopup(popup));
 buttonEdit.addEventListener('click', openPopupEdit);
