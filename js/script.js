@@ -79,19 +79,19 @@ function openPopupCard() {
 //функция отображения карточек на странице
 function addCard(name, link) {
 
-    const elements = document.querySelector('.elements'); //находим контейнер для карт 
     const elementTemplate = document.querySelector("#element-template").content; //находим форму
     const card = elementTemplate.cloneNode(true);      //копируем форму
     const cardElement = card.querySelector('.elements__item');
-    
+
     cardElement.src = link;
     cardElement.alt = name;
-    
+
     card.querySelector('.elements__title').textContent = name; //название с массива
     card.querySelector('.elements__button-like').addEventListener('click', cardsLike); //нашли кнопку лайк
     cardElement.addEventListener('click', cardsImage);      //увеличение картинок
-    elements.addEventListener('click', deleteCard);     //удаление карточек
-    cardCopy(card);
+    card.querySelector('.elements__remove').addEventListener('click', cardDelete); //удаление карточек
+
+    return (card);
 }
 
 
@@ -109,10 +109,17 @@ function cardsImage(evt) {
     togglePopup(imagePopup);
 }
 
-initialCards.forEach(function (item) {
-    addCard(item.name, item.link);
 
-});
+function prependCard(name, link) {
+    elements.prepend(addCard(name, link));
+}
+
+
+function loadCard() {
+    initialCards.forEach((item) => {
+        prependCard(item.name, item.link);
+    });
+}
 
 
 //функция отправки формы
@@ -123,12 +130,10 @@ function changeElementsCard(evt) {
     togglePopup(addForm);
 }
 
-//функция удаления карточек
-function deleteCard(event) {
-    if (event.target.classList.contains('elements__remove')) {
 
-        event.target.closest('.elements__rentangle').remove();
-    }
+//функция удаления карточек
+function cardDelete(evt) {
+    evt.target.closest('.elements__rentangle').remove();
 }
 
 //функция постановки лайка
@@ -136,6 +141,7 @@ function cardsLike(evt) {
     evt.target.classList.toggle('elements__button-like_active');
 }
 
+loadCard();
 
 buttonClose.addEventListener('click', () => togglePopup(popup));
 buttonEdit.addEventListener('click', openPopupEdit);
